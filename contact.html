@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sachin Dhawale's Maths and Reasoning Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/css/intlTelInput.css">
+    
+    <style>
+        :root { 
+            --blue: #004a99; 
+            --dark: #1a1a1b; 
+            --fb: #1877f2; 
+            --yt: #FF0000; 
+            --tg: #24A1DE;
+            --wa: #25D366;
+            --google-blue: #4285F4; /* Re-defined fallback */
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; margin: 0; line-height: 1.6; background-color: #fff; color: var(--dark); }
+        
+        header { background: #fff; padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .logo-area { display: flex; align-items: center; text-decoration: none; color: inherit; }
+        .logo-area img { height: 50px; margin-right: 15px; border-radius: 50%; }
+        .logo-text b { display: block; font-size: 1.1rem; color: var(--blue); }
+        
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav a { text-decoration: none; color: var(--dark); font-weight: 600; transition: 0.3s; }
+        nav a:hover { color: var(--blue); }
+
+        .contact-container { padding: 80px 8%; max-width: 1000px; }
+        h1 { color: var(--blue); margin-bottom: 25px; font-size: 2.2rem; }
+        
+        .contact-info-block { margin-bottom: 30px; }
+        .contact-info-block p { margin-bottom: 15px; font-size: 1.1rem; display: flex; align-items: center; }
+        .contact-info-block i { color: var(--blue); margin-right: 15px; width: 25px; text-align: center; font-size: 1.2rem; }
+
+        /* Social & Location Buttons */
+        .social-links { margin-top: 40px; display: flex; gap: 15px; flex-wrap: wrap; }
+        .btn-social { 
+            padding: 14px 24px; 
+            border-radius: 8px; 
+            color: #fff; 
+            text-decoration: none; 
+            font-weight: 600; 
+            font-size: 0.95rem; 
+            transition: all 0.3s ease; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            min-width: 180px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn-social i { margin-right: 12px; font-size: 1.2rem; }
+        .btn-social:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.2); filter: brightness(1.1); }
+
+        footer { padding: 40px 8%; border-top: 1px solid #eee; text-align: center; color: #888; font-size: 0.9rem; margin-top: 60px; }
+
+        @media (max-width: 600px) {
+            .contact-container { padding: 40px 5%; }
+            .btn-social { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo-area">
+        <img src="mylogo.jpg" alt="Logo">
+        <div class="logo-text"><b>Sachin Dhawale's</b> Maths and Reasoning Academy</div>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" style="color:var(--blue)">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="contact-container">
+    <h1>Contact Us</h1>
+    
+    <div class="contact-info-block">
+        <p><i class="fa-solid fa-map-pin"></i> 4th Floor, Nikhil Pride Building, Tilak Road, Sadashiv Peth, Pune 411030</p>
+        <p><i class="fa-solid fa-phone-volume"></i> <b>Helpline:</b> +91 9773551947</p>
+        <p><i class="fa-solid fa-university"></i> <b>Office:</b> +91 8605756973 | 9260400700</p>
+        <p><i class="fa-solid fa-envelope-open-text"></i> sdhawale98@gmail.com</p>
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/csatsachin/" target="_blank" class="btn-social" style="background-color: var(--fb);">
+            <i class="fa-brands fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://www.youtube.com/@sachindhawalesmathsandreas8957" target="_blank" class="btn-social" style="background-color: var(--yt);">
+            <i class="fa-brands fa-youtube"></i> YouTube
+        </a>
+        <a href="https://t.me/csatsachin" target="_blank" class="btn-social" style="background-color: var(--tg);">
+            <i class="fa-brands fa-telegram"></i> Telegram
+        </a>
+        <a href="https://wa.me/919773551947" target="_blank" class="btn-social" style="background-color: var(--wa);">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://www.google.com/maps/place/Sachin+Dhawale's+Maths+%26+Reasoning+Academy/@18.5057522,73.8527718,17z/data=!4m6!3m5!1s0x3bc2c065a7c56561:0xcae6a65b17805a51!8m2!3d18.5057522!4d73.8527718!16s%2Fg%2F11f1n18c_6?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-social" style="background-color: #4285F4;">
+            <i class="fa-solid fa-location-dot"></i> Location
+        </a>
+    </div>
+</div>
+
+<footer>
+    © 2026 Sachin Dhawale's Maths and Reasoning Academy | Pune
+</footer>
+
+</body>
+</html>

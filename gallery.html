@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Sachin Dhawale's Maths and Reasoning Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --blue: #004a99; --dark: #1a1a1b; --light: #f8f9fa; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background: #fff; margin: 0; color: var(--dark); }
+        
+        /* Shared Header Styles */
+        header { background: #fff; padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .logo-area { display: flex; align-items: center; text-decoration: none; color: inherit; }
+        .logo-area img { height: 50px; margin-right: 15px; border-radius: 50%; }
+        .logo-text b { display: block; font-size: 1.1rem; color: var(--blue); }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav a { text-decoration: none; color: var(--dark); font-weight: 600; }
+
+        /* Gallery Page Styles */
+        .container { padding: 60px 8%; text-align: center; }
+        h1 { color: var(--blue); margin-bottom: 40px; }
+
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        
+        /* New Clickable Link Style */
+        .gallery-item-link { text-decoration: none; color: inherit; display: block; border-radius: 8px; overflow: hidden; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        
+        /* Image Preview Style */
+        .img-card { background: #eee; height: 250px; position: relative; width: 100%; }
+        .img-card img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; display: block; }
+        .img-card span { position: absolute; bottom: 10px; left: 10px; color: #fff; background: rgba(0,0,0,0.6); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem; pointer-events: none; }
+
+        /* Complex Hover Effect */
+        .gallery-item-link:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .gallery-item-link:hover .img-card img { transform: scale(1.1); }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo-area">
+        <img src="mylogo.jpg" alt="Logo">
+        <div class="logo-text"><b>Sachin Dhawale's</b> Maths and Reasoning Academy</div>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html" style="color:var(--blue)">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Academy Gallery</h1>
+    <div class="gallery-grid">
+        
+        <a href="https://fpimages.withfloats.com/actual/68b74aa9865943200b19c444.jpg" target="_blank" class="gallery-item-link">
+            <div class="img-card"><img src="https://fpimages.withfloats.com/actual/68b74aa9865943200b19c444.jpg" alt="Classroom learning session"><span>Classroom Teaching</span></div>
+        </a>
+        
+        <a href="https://fpimages.withfloats.com/actual/68b74a93b04ac9c86532adfe.jpg" target="_blank" class="gallery-item-link">
+            <div class="img-card"><img src="https://fpimages.withfloats.com/actual/68b74a93b04ac9c86532adfe.jpg" alt="Student interactions"><span>Interactive Studies</span></div>
+        </a>
+        
+        <a href="https://fpimages.withfloats.com/actual/68b74a82bc79a0473f8cd1e1.jpg" target="_blank" class="gallery-item-link">
+            <div class="img-card"><img src="https://fpimages.withfloats.com/actual/68b74a82bc79a0473f8cd1e1.jpg" alt="Batch photo of students"><span>Focus Group Batch</span></div>
+        </a>
+        
+        <a href="https://fpimages.withfloats.com/actual/5d32d643a847c90001fa37ce.jpg" target="_blank" class="gallery-item-link">
+            <div class="img-card"><img src="https://fpimages.withfloats.com/actual/5d32d643a847c90001fa37ce.jpg" alt="Study materials close-up"><span>Academic Materials</span></div>
+        </a>
+        
+        <a href="https://fpimages.withfloats.com/actual/5d1b29b0e0806600010b4268.jpg" target="_blank" class="gallery-item-link">
+            <div class="img-card"><img src="https://fpimages.withfloats.com/actual/5d1b29b0e0806600010b4268.jpg" alt="Academy building entrance view"><span>Academy Premises</span></div>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>

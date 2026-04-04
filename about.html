@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Sachin Dhawale's Maths and Reasoning Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root { 
+            --blue: #004a99; 
+            --dark: #1a1a1b; 
+            --light-grey: #f4f7f9; /* New background color */
+            --white: #ffffff;
+            --accent: #ff8c00;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            line-height: 1.8; 
+            background-color: var(--light-grey); /* Applied to the whole page */
+            color: var(--dark); 
+        }
+        
+        /* Header Navigation */
+        header { 
+            background: var(--white); 
+            padding: 15px 8%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+        .logo-area { display: flex; align-items: center; text-decoration: none; color: inherit; }
+        .logo-area img { height: 55px; margin-right: 15px; border-radius: 50%; }
+        .logo-text b { display: block; font-size: 1.1rem; color: var(--blue); }
+        
+        nav ul { list-style: none; display: flex; gap: 25px; }
+        nav a { text-decoration: none; color: var(--dark); font-weight: 600; font-size: 0.95rem; transition: 0.3s; }
+        nav a:hover { color: var(--blue); }
+
+        /* Main Content Container */
+        .main-container { padding: 60px 8%; max-width: 1100px; margin: 0 auto; }
+
+        /* Content Card */
+        .about-card {
+            background: var(--white);
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        h1 { 
+            color: var(--blue); 
+            margin-bottom: 30px; 
+            font-size: 2.4rem; 
+            position: relative;
+            padding-bottom: 10px;
+        }
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .about-text p { 
+            margin-bottom: 25px; 
+            font-size: 1.1rem; 
+            color: #444; 
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background: #eef5ff;
+            border-left: 5px solid var(--blue);
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+        }
+
+        footer { 
+            padding: 40px 8%; 
+            text-align: center; 
+            color: #888; 
+            font-size: 0.9rem; 
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            .about-card { padding: 30px; }
+            h1 { font-size: 1.8rem; }
+            .nav-links { display: none; } /* Simplified for mobile */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo-area">
+        <img src="mylogo.jpg" alt="Logo">
+        <div class="logo-text"><b>Sachin Dhawale's</b> Maths and Reasoning Academy</div>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" style="color:var(--blue)">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="main-container">
+    <div class="about-card">
+        <h1>About Our Academy</h1>
+        
+        <div class="about-text">
+            <p>
+                <b>Sachin Dhawale's Maths & Reasoning Academy</b> is a leading coaching institution EXCLUSIVELY catering to the needs of MPSC/UPSC. It has churned out thousands of students who are today having successful careers. Our objective is not only to provide conceptual exam oriented coaching but also to develop skills among our student fraternity to enhance their employability/ entrepreneurial traits.
+            </p>
+
+            <div class="highlight-box">
+                "Our vision is to impart Quality coaching and guidance to the students so as to transform them into professionals."
+            </div>
+
+            <p>
+                Sachin Dhawale's Maths & Reasoning Academy was founded primarily to assist student in MPSC/UPSC Education. The academy was established in the year 2010.
+            </p>
+
+            <p>
+                The Center started with a small number of students, however with a unique educational system, we currently have on our roll thousand students every Year.
+            </p>
+
+            <p>
+                By God's blessing and with a dedicated team of expert faculties under close supervision of Directors, Sachin Dhawale's Maths & Reasoning Academy has turned out to hold a large number of <b>RANK HOLDERS</b> in Maharashtra.
+            </p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2026 Sachin Dhawale's Maths and Reasoning Academy | Pune
+</footer>
+
+</body>
+</html>
